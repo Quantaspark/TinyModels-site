@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TinyModels — Big intelligence. Tiny footprint. Open source ML for everyone.">
+  <title>TinyModels ⚡ — Big Intelligence. Tiny Footprint.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Grid texture -->
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Noise overlay -->
+  <canvas id="noise" aria-hidden="true"></canvas>
+
+  <!-- ── NAV ────────────────────────────────────────────── -->
+  <nav class="nav">
+    <a href="#" class="nav__logo">TinyModels <span>⚡</span></a>
+    <ul class="nav__links">
+      <li><a href="#why">Why Tiny</a></li>
+      <li><a href="#how">How We Build</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#jokes">A Word</a></li>
+      <li><a href="https://huggingface.co/TinyModels" target="_blank" rel="noopener" class="nav__hf">HuggingFace →</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ───────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero__tag">open source · community built · free forever</div>
+      <h1 class="hero__title">
+        <span class="line line--1">Big</span>
+        <span class="line line--2">intelligence.</span>
+        <span class="line line--3">Tiny<em>footprint.</em></span>
+      </h1>
+      <p class="hero__sub">
+        We build small, fast, production-ready models that punch above their weight.<br>
+        No bloat. No nonsense. Runs on your laptop — not just someone's A100 cluster.
+      </p>
+      <div class="hero__btns">
+        <a href="https://huggingface.co/TinyModels" target="_blank" rel="noopener" class="btn btn--primary">Browse Models →</a>
+        <a href="#why" class="btn btn--ghost">Why Tiny?</a>
+      </div>
+
+      <!-- Marquee ticker -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__inner">
+          <span>Free-tier first</span>
+          <span>·</span>
+          <span>Open weights</span>
+          <span>·</span>
+          <span>No paywalls</span>
+          <span>·</span>
+          <span>Runs on T4</span>
+          <span>·</span>
+          <span>Community built</span>
+          <span>·</span>
+          <span>Low carbon</span>
+          <span>·</span>
+          <span>Free-tier first</span>
+          <span>·</span>
+          <span>Open weights</span>
+          <span>·</span>
+          <span>No paywalls</span>
+          <span>·</span>
+          <span>Runs on T4</span>
+          <span>·</span>
+          <span>Community built</span>
+          <span>·</span>
+          <span>Low carbon</span>
+          <span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY ────────────────────────────────────────────── -->
+    <section class="why section" id="why">
+      <div class="container">
+        <div class="section-label">// what we do</div>
+        <h2 class="section-title">Machine learning<br>for <em>everyone.</em></h2>
+        <p class="section-sub">Most AI labs race to make models bigger. We race to make them <em>smaller</em> without losing what matters.</p>
+
+        <div class="why__grid">
+          <article class="why-card reveal">
+            <span class="why-card__icon">🎯</span>
+            <h3>Precision over scale</h3>
+            <p>Every model we ship is purpose-built for a specific task — not a general-purpose blob that tries to do everything mediocrely. Specialization wins.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">⚡</span>
+            <h3>Free-tier first</h3>
+            <p>Everything is trained and tested on Google Colab T4 GPUs. If it doesn't run there, it doesn't ship. Your hardware shouldn't be a barrier to good AI.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">🔓</span>
+            <h3>Truly open</h3>
+            <p>No paywalls. No gated weights. No "available upon request." Every model, dataset, and training notebook is public, forkable, and yours to build on.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">🌱</span>
+            <h3>Low carbon, high impact</h3>
+            <p>Smaller models mean less compute, less energy, less waste. Good ML shouldn't require a power plant. We take that seriously.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COMPARISON ─────────────────────────────────────── -->
+    <section class="compare section" id="how">
+      <div class="container">
+        <div class="section-label">// efficiency over parameters</div>
+        <h2 class="section-title">The AI industry measures<br>progress in <em>billions.</em><br>We measure it in <em>milliseconds.</em></h2>
+
+        <div class="compare__table reveal">
+          <div class="compare__col compare__col--bad">
+            <div class="compare__head">Big models</div>
+            <div class="compare__row"><span class="compare__k">Cost per inference</span><span class="compare__v compare__v--bad">$$$ expensive</span></div>
+            <div class="compare__row"><span class="compare__k">Latency</span><span class="compare__v compare__v--bad">500ms – 2s</span></div>
+            <div class="compare__row"><span class="compare__k">Deployment</span><span class="compare__v compare__v--bad">Needs A100 / H100</span></div>
+            <div class="compare__row"><span class="compare__k">Accessible to</span><span class="compare__v compare__v--bad">Well-funded labs</span></div>
+            <div class="compare__row"><span class="compare__k">Carbon footprint</span><span class="compare__v compare__v--bad">Very high</span></div>
+          </div>
+          <div class="compare__vs">VS</div>
+          <div class="compare__col compare__col--good">
+            <div class="compare__head">TinyModels ⚡</div>
+            <div class="compare__row"><span class="compare__k">Cost per inference</span><span class="compare__v compare__v--good">Free / near-free</span></div>
+            <div class="compare__row"><span class="compare__k">Latency</span><span class="compare__v compare__v--good">20 – 80ms</span></div>
+            <div class="compare__row"><span class="compare__k">Deployment</span><span class="compare__v compare__v--good">T4, CPU, phone</span></div>
+            <div class="compare__row"><span class="compare__k">Accessible to</span><span class="compare__v compare__v--good">Everyone</span></div>
+            <div class="compare__row"><span class="compare__k">Carbon footprint</span><span class="compare__v compare__v--good">Low</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RULES ──────────────────────────────────────────── -->
+    <section class="rules section" id="rules">
+      <div class="container">
+        <div class="section-label">// philosophy</div>
+        <h2 class="section-title">Three rules.<br>No exceptions.</h2>
+        <p class="section-sub">Every model we release must clear all three bars. No partial credit.</p>
+
+        <div class="rules__list">
+          <article class="rule reveal">
+            <span class="rule__num">01</span>
+            <div class="rule__body">
+              <h3>Fits on a free GPU</h3>
+              <p>If it doesn't run on a Colab T4, it doesn't ship. Deployable by anyone means deployable by everyone — students, indie devs, researchers with no budget.</p>
+            </div>
+          </article>
+          <article class="rule reveal">
+            <span class="rule__num">02</span>
+            <div class="rule__body">
+              <h3>Beats models twice its size</h3>
+              <p>Size is not an excuse for quality. Every TinyModel must outperform or match models with significantly higher parameter counts on its target benchmark. Efficiency is the craft.</p>
+            </div>
+          </article>
+          <article class="rule reveal">
+            <span class="rule__num">03</span>
+            <div class="rule__body">
+              <h3>Ships with clean docs</h3>
+              <p>A model nobody can use is worthless. Every release comes with a complete model card, working code examples, and honest evaluation numbers — no cherry-picked benchmarks.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── JOKES ──────────────────────────────────────────── -->
+    <section class="jokes section" id="jokes">
+      <div class="container">
+        <div class="section-label">// a word (or two)</div>
+        <h2 class="section-title">Jokes and a<br>serious note.</h2>
+
+        <div class="jokes__grid">
+          <div class="joke reveal">
+            <span class="joke__label">// joke #1</span>
+            <p>GPT-4 walks into a bar. The bartender says: "We don't serve models with 1.8 trillion parameters here." GPT-4 says: "That's fine, I'll just hallucinate a better bar."</p>
+          </div>
+          <div class="joke reveal">
+            <span class="joke__label">// joke #2</span>
+            <p>A researcher asks a 70B model and a 141M model the same question. The 70B takes 4 seconds. The 141M answers in 22ms and says: "Same thing, shorter."</p>
+          </div>
+        </div>
+
+        <blockquote class="manifesto reveal">
+          <p>The democratization of AI is not a marketing phrase — it is an obligation. When the tools to build intelligent systems are locked behind compute budgets that only large organizations can afford, the people who could benefit most from this technology are exactly the ones who cannot access it.</p>
+          <p>TinyModels exists because we believe that making something smaller and faster is not a compromise — it is a discipline. Every parameter saved, every millisecond cut, every megabyte reduced is a deliberate act of engineering that makes this technology more portable, more sustainable, and more inclusive.</p>
+          <p>We will keep building that way.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ── CTA ────────────────────────────────────────────── -->
+    <section class="cta section">
+      <div class="container reveal">
+        <h2>Open to everyone.<br>Forever.</h2>
+        <p>Follow the org, contribute models, datasets, or ideas — all are welcome.</p>
+        <div class="cta__btns">
+          <a href="https://huggingface.co/TinyModels" target="_blank" rel="noopener" class="btn btn--primary">Follow on HuggingFace →</a>
+          <a href="https://huggingface.co/QuantaSparkLabs" target="_blank" rel="noopener" class="btn btn--ghost">QuantaSparkLabs →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">TinyModels ⚡</span>
+        <span class="footer__copy">Built with care by the community · Free forever · Open to all</span>
+        <div class="footer__links">
+          <a href="https://huggingface.co/TinyModels" target="_blank" rel="noopener">HuggingFace</a>
+          <a href="https://huggingface.co/QuantaSparkLabs" target="_blank" rel="noopener">QuantaSparkLabs</a>
+        </div>
+      </div>
+      <p class="footer__tagline">Tiny models. Huge ambitions.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
